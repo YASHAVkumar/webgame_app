@@ -1,0 +1,72 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+    table
+    {
+    margin-left:300px;
+    margin-top:20px;
+    width:805px;
+    height:150px;
+    font-size:30px;
+    color:black;
+    }
+    a
+    {
+    margin-left:30px;
+    margin-top:40px;
+    font-size:20px;
+
+    }
+    button
+    {
+
+    margin-top:40px;
+    margin-left:60px;
+    }
+iframe
+{
+width:0px;
+height:0px;
+frame-border:0px;
+}
+    </style>
+
+
+
+    <h1 style="font-size:40px;color:darkblue;margin-top:20px;">
+**************************GAME SCORE**************************
+</h1>
+   <button> <a href="/"><U>HOME</U></a></button>
+</head>
+<body bgcolor="lightblue">
+<table border="15"   bgcolor="lightblack">
+<tr style="color:#26f319;">  <!--#26f319-->
+    <th></th>
+    <th>CHOICE</th>
+    <th>WIN</th>
+    <th>DRAW MATCH</th>
+</tr>
+    <tr>
+        <th style="color:red;">PLAYER</th>
+        <th>{{val}}</th>
+        <th>{{win1}}</th>
+        <th>{{equal}}</th>
+    </tr>
+    <tr>
+        <th style="color:red;">COMPUTER</th>
+        <th>{{y}}</th>
+        <th>{{comp}}</th>
+        <th>{{equal}}</th>
+    </tr>
+</table>
+<h1 style="font-size:60px;color:darkblack;margin-top:100px;margin-left:500px;">{{win1}} {{comp}}</h1>
+
+<h1 style="font-size:40px;color:darkblue;margin-top:70px;">
+************************GAME FINISHED**************************
+</h1>
+<iframe src="https://www.youtuberepeater.com/watch?v=a9NIZOvfKpc#gsc.tab=0"></iframe>
+</body>
+</html>

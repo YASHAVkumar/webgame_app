@@ -1,0 +1,98 @@
+{% load static %}
+<html>
+<head>
+<title>Stone Paper Scissors</title>
+<link rel="stylesheet" href="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\css\First Game.css'%}">
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <style>
+  .player
+  {
+  border:0px solid;
+  width:400px;
+  height:30px;
+  margin:120px;
+  }
+  #ch2
+  {
+  width:200px;
+  margin-left:40px;
+  }
+  input
+  {
+  boder:2px solid;
+  margin-left:90px;
+  border-radius:9;
+  }
+iframe
+{
+
+width:0px;
+height:0px;
+frame-border:none;
+
+}
+</style>
+    <script src="https://kit.fontawesome.com/53a86ae002.js" crossorigin="anonymous"></script>
+</head>
+<header >
+
+<div class="img">
+    <h1 align="center" >Stone Paper Scissors - <B><U>GAME</U></B></h1>
+</div>
+</header>
+<body bgcolor="#d68f18" >
+
+<div class="outer_frame">
+<div class="frame">
+<div class="choice">
+<h1 style="font-size:40px">Play (select one option)</h1>
+<i class="fas fa-user"></i>
+    <form   action="score"  method="get" onsubmit="fun()">
+
+        <select name="Player" id="ch2">
+        <option>STONE</option>
+        <option>PAPER</option>
+        <option>SCISSOR</option>
+    </select>
+        <input type="submit" name="submit" id="sub">
+ </form>
+</div>
+
+
+</div>
+
+<div class="margin_left">
+<h1 ><U>HOW TO PLAY</U></h1>
+<marquee direction="up" scrollamount="3">
+   <p style="font-color:red;font-size:20px;margin-left:25px;">
+     1. PLEASE CLICK ON IMAGE TO SELECT YOUR CHARACTER.<BR>
+	 2. Wait for Computer to Play her move.<br>
+	 3. AT LAST WHEN IT DISPLAY WINNER NAME.<br>
+   </p>
+</marquee>
+    <iframe src="https://youtuberepeater.com/watch?v=eZ8lmEQO8ks&name=Animal+Crossing+GameCube+Original+Soundtrack+8PM#gsc.tab=0"  ></iframe>
+</div>
+<div class="margin_right">
+    <h1 style="margin-left:20px;">
+
+   THIS IS MY FIRST PROJECT
+         </h1>
+  <img src="{%static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\sn-rockpaper.jpg'%}" width="250" height="250" style="margin-top:40;">
+
+</div>
+
+</div>
+<div class="images">
+    <marquee scrollamount="12" behaviour="alternate">
+    <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\rock.png' %}" alt="fukeyatu" id="char">
+    <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\paper.png'%} "  alt="fukeya"  id="char">
+    <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\seccor.png' %} " alt="fukeya1" id="char">
+
+        <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\rock.png' %}" alt="fukeyatu" id="char">
+    <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\paper.png'%} "  alt="fukeya"  id="char">
+    <img src="{% static 'C:\Users\DELL\PycharmProjects\game\app\static\app\img\seccor.png' %} " alt="fukeya1" id="char">
+
+    </marquee>
+</div>
+</body>
+</html>
